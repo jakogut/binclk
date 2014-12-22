@@ -1,0 +1,10 @@
+[Unit]
+Description=LED binary clock
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/binclk
+
+[Install]
+WantedBy=multi-user.target
